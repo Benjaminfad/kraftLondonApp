@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>kraftLondon.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>portfolio</title>
+</head>
+
+
+<body>
+  
+  <div id="header">
+    <div class="container">
+      <nav>
+        <P class="logo-text anim"><span>k</span>raftLondon.</P>
+          <ul id="sidemenu" class="anim">
+            <li style=" font-weight: bold;"><a href="whoweare.html">Who we are</a></li>
+            <li style=" font-weight: bold;"><a href="blog.html">Blogs</a></li>
+            <li style=" font-weight: bold;"><a href="whatweoffer.html">What We Offer</a></li>
+            <li style=" font-weight: bold;" ><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact" class="reach-out anim">Reach Out To Us</a></li>
+            <img src="image/menu (1).png" class="clone-icon anim" id="close-times" onclick="closemenu()">
+          </ul>
+          <img src="image/menu.png" class="clone-icon anim" id="open-times" onclick="openmenu()">  
+    </nav>
+  </div>
+ </div>
+     </div>
+    
+    
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+              <div class="contact-right">
+                <form id="myForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+           
+            </div>
+        </div>
+          
+     </div>
+    
+
+
+<!-- javascript -->
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+           sidemenu.style.left = "110px";
+
+     }
+    function closemenu(){
+           sidemenu.style.left = "-800px";
+
+     }
+
+</script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+  
+</script>
+
+    <script type="text/javascript">      (function () {
+        emailjs.init("AqcwFAWOQMHZsaGmS");
+      })();
+    </script>
+
+
+     <script>
+        
+        // listen to the form submission
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+  
+            const serviceID = "service_us46k6q";
+            const templateID = "template_el1r8z8";
+  
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+              (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+              }
+            );
+          });
+      </script>
+
+ <!-- javascript -->
+
+
+</body>
+</html>

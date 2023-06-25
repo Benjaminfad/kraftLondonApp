@@ -1,0 +1,120 @@
+.container{
+    width: 100%;
+    padding: 2px;
+
+}
+.logo-text{
+    font-size: 30px;
+}
+#header-content{
+ height: 80vh;
+ background-position: top;
+ background-size: contain;
+ background-position-y:30px;
+;
+}
+.header-text{
+padding: 5.3rem;
+margin-top:15rem;
+transform: translateX(-40px);
+
+}
+.header-text h1{
+font-size: 30px;
+line-height: 33px;
+white-space: nowrap;
+
+
+
+}
+
+.header-text p{
+font-size: 25px;
+font-weight: light;
+color: darkgray;
+}
+nav .clone-icon{
+display: block;
+width: 25px;
+
+}
+nav ul{
+background:#fff;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); 
+position: fixed;
+top: 0;
+left: -800px;
+width: 295px;
+height: 110vh;
+padding-top: 50px;
+z-index: 2;
+transition: left 0.8s;
+}
+nav ul li a{
+display: block;
+font-size: 20px;
+color: #000;
+margin: 25px;
+}
+.reach-out{
+font-size: 1rem;
+padding: none;
+}
+.reach-out:hover{
+font-size: 1rem;
+padding: none;
+}
+nav ul .clone-icon{
+ position: absolute;
+top: 25px;
+left: 25px;
+cursor: pointer;
+}
+
+.about-col-1, .about-col-2{
+flex-basis: 100%;
+}
+.about-col-1{
+margin-top: 50px;
+}
+.about-col-2{
+font-size: 14px;
+margin-top: 80px;
+}
+.tab-links{
+font-size: 16px;
+margin-right: 20px;
+}
+.contact-left, .contact-right{
+   flex-basis: 100%;
+}
+.copyright{
+font-size: 14px;
+}
+#services{
+padding: 13px;
+width: 25.1rem;
+}
+.sub-title{
+padding: 25px;
+font-size: 30px;
+}
+.services-list div img{
+width:  180px;
+}
+.services-list div h2{
+font-size: 40px;
+font-weight: bold;
+}
+footer{
+width: 25.1rem;
+}
+#contact{
+width: 25.1rem;    
+}
+
+#msg{
+color: #238680;
+margin-top: -40px;
+display: block;
+}
