@@ -83,9 +83,10 @@ nav ul li a:hover{
     background-color:rgb(8, 52, 8) ;
     padding: 17px;
     color: #fff;
+    box-shadow: 5px 7px 2px 0 rgb(187, 185, 185); 
     border-radius: 6px;
     font-size: 18px;
-    transition: 0.1s;
+    transition: 0.9s;
     position: relative;   
 }
 .reach-out:hover{
@@ -93,7 +94,23 @@ nav ul li a:hover{
     padding: 17px;
     color: #fff;
     font-size: 18px;
+    box-shadow: none;
+    transition: 0.8s ease-in-out;
+    position: relative;
+    top: 6px;
 
+}
+#reachoutBtn{
+    box-shadow: 5px 7px 2px 0 rgb(187, 185, 185); 
+    transition: 0.9s;
+}
+#reachoutBtn:hover{
+    box-shadow: none;
+    transition: 0.8s ease-in-out;
+    position: relative;
+    top: 6px;
+
+    
 }
 /*---nav----*/
 
@@ -109,6 +126,9 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     animation-delay: 0.8s;
     padding-top: 3rem;
+}
+.profile-content{
+   background-image: url(image/team4.png);
 }
 .header-text{
     font-size: 30px;
@@ -1331,7 +1351,131 @@ form .btn2{
 	flex-direction:row;
 	padding: 40px;
 }
+/*-----onboarding screen ----*/
+.onboard-container {
+    background: linear-gradient(93.08deg, #ffffff 5.3%, rgb(255, 255, 255) 32.63%, rgb(251, 247, 247) 22.36%, rgba(0, 0, 0, 0.004) 98.15%);
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 4rem;
+  }
+  
+  .onboard-content {
+    width: 100%;
+  }
+  
+  .onboard-logo .logo-text{
+    width: 250px;
+    height: 250px;
+    font-size: 30px;
+    position: relative;
+    left: 40rem ;
+    top: 6rem;
+    font-family: 'Bauhaus 93';
+    color: black;
+   
+}
+  
+  .onboard-content .header-content {
+    color: black;
+    position: relative;
+    bottom: 4rem;
+    line-height: 65px;
+  }
+  
+  .header-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .header-content p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .onboard-content .card-container {
+    width: 100%;
+    padding: 180px;
+    position: relative;
+    bottom: 12rem;
+  }
+  
+  .card-group {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .card {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 1px rgb(255, 255, 255);
+  }
 
+  .selected {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .card-content {
+    padding: 20px;
+    line-height: 49px;
+  }
+  
+  .card-content h1 {
+    font-size: 24px;
+  }
+  
+  .card-content p {
+    font-size: 15px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: 800;
+    width: 80%;
+    height: 80vh;
+    color: rgb(8, 52, 8) ;
+  }
+  
+  .card-image img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-container button {
+    background: rgb(8, 52, 8) ;
+    padding: 18px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 7px 2px 0 rgb(187, 185, 185); 
+    top: 4rem;
+    text-decoration: wavy;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.8s;
+  }
+  
+  .card-container button:hover {
+    position: relative;
+    bottom: -30px;
+    box-shadow: none; 
+  }
+  
+  button img {
+    padding: 1px;
+    box-shadow: none;
+    position: relative;
+    top: 4px;
+    left: 7px;
+  }
+
+/*----onboardingscreen---*/
 
 
 
@@ -1819,6 +1963,7 @@ footer a:hover{
 .blog-header img{
     width: 30px;
 }
+
 /*--- blog --- */
 
 
@@ -1827,6 +1972,74 @@ footer a:hover{
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     
   }
+  @media (max-width: 800px) {
+    .onboard-container {
+      background: linear-gradient(93.08deg, #FFFFFF 5.3%, #fcefea 36.63%, #fdf7f7 72.36%, rgba(225, 235, 242, 0) 98.15%);
+      color: black;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      bottom: 4rem;
+    }
+    .header-content h1 {
+      font-size: 23px;
+      font-weight: 700;
+    }
+    .header-content p {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .onboard-content .header-content {
+      color: black;
+      position: relative;
+      bottom: 4rem;
+      line-height: 40px;
+    }
+    .onboard-content .card-container {
+      width: 100%;
+      position: relative;
+      padding: 0px;
+      margin-left: 19%;
+      bottom: 0rem;
+    }
+    .card-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: rgb(255, 255, 255);
+      width: 60%;
+      height: 40vh;
+      border-radius: 10px;
+      box-shadow: 1px 2px 1px rgb(255, 255, 255);
+    }
+    .card-content {
+      padding: 30px;
+      line-height: 32px;
+    }
+    .card-content h1 {
+      font-size: 21px;
+    }
+    .card-content p {
+      line-height: 18px;
+      font-weight: 600;
+    }
+    .card-image img {
+      width: 40px;
+      height: 40px;
+    }
+    .card-container button {
+      background: rgb(243, 114, 63);
+      padding: 18px;
+      border: none;
+      position: relative;
+      cursor: pointer;
+      top: 4rem;
+      right: 19%;
+      border-radius: 15px;
+      color: #fff;
+      font-size: 18px;
+    }
     /* styles go here */
 
 

@@ -29,7 +29,7 @@
   <body  style="background:  linear-gradient(93.08deg, #ffffff 5.3%, rgb(255, 255, 255) 32.63%, rgb(251, 247, 247) 22.36%, rgba(0, 0, 0, 0.004) 98.15%);">
     <div id="profile">
     <div id="header">
-      <div class="container">
+      <div class="container"> 
         <nav id="pofile-background">
           <p class="logo-text anim"><span>k</span>raftLondon.</p>
           <ul id="sidemenu" class="anim">
@@ -40,12 +40,12 @@
             <li style="font-weight: bold">
               <a href="whatweoffer.html">What We Offer</a>
             </li>
-            <li style="font-weight: bold"><a href="user.html" id="user-email"></a></li>
+            <li style="font-weight: bold"><i class="fa-sharp fa-solid fa-user" style="color: black;"></i><a href="user.html" id="user-email"></a></li>
             <li>
-              <a href="email.html" class="reach-out anim">Reach Out To Us</a>
+              <a href="Onboarding.html" class="reach-out anim" id="reachoutBtn">Start Connecting</a>
             </li>
             <li>
-                <a href="">Log-Out</a>
+                <button href="" onclick="logout()" style=" font-size: 16px; background: transparent; border: none; cursor: pointer; font-weight: 600;">Log-Out</button>
               </li>
             <img
               src="image/close (2).png"
@@ -66,7 +66,7 @@
   </div>
 
     <!-- Header -->
-    <div id="header-content">
+    <div id="header-content" style=" background-image: url(image/team7.png);">
       <div class="header-text">
         <h1 class="top" id="hover-effect2">
           <a href="" style="color: rgb(223, 210, 184)"
@@ -270,7 +270,7 @@
         // Display the first and second letters in the profile page
         document.getElementById('user-email').textContent = firstLetter + secondLetter;
       </script>
-
+    <script type="text/javascript" src="logout.js"></script>
 
 
     <!-- javascript -->

@@ -1,0 +1,102 @@
+.onboard-container {
+    background: linear-gradient(93.08deg, #FFFFFF 5.3%, #fcefea 36.63%, #fdf7f7 72.36%, rgba(225, 235, 242, 0) 98.15%);
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 4rem;
+  }
+  
+  .onboard-content {
+    width: 100%;
+  }
+  
+  .onboard-logo img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .onboard-content .header-content {
+    color: black;
+    position: relative;
+    bottom: 4rem;
+    line-height: 65px;
+  }
+  
+  .header-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .header-content p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .onboard-content .card-container {
+    width: 100%;
+    padding: 180px;
+    position: relative;
+    bottom: 12rem;
+  }
+  
+  .card-group {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .card {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px rgb(255, 255, 255);
+  }
+  
+  .card-content {
+    padding: 20px;
+    line-height: 49px;
+  }
+  
+  .card-content h1 {
+    font-size: 24px;
+  }
+  
+  .card-content p {
+    font-size: 15px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: 800;
+    width: 80%;
+    height: 80vh;
+    color: rgb(243, 114, 63);
+  }
+  
+  .card-image img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-container button {
+    background: rgb(243, 114, 63);
+    padding: 18px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    top: 4rem;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.8s;
+  }
+  
+  .card-container button:hover {
+    transform: translateY(-20px);
+  }
+  
+  button img {
+    padding: 1px;
+    position: relative;
+    top: 4px;
+    left: 7px;
+  }
