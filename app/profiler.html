@@ -28,57 +28,53 @@
 
   <body  style="background:  linear-gradient(93.08deg, #ffffff 5.3%, rgb(255, 255, 255) 32.63%, rgb(251, 247, 247) 22.36%, rgba(0, 0, 0, 0.004) 98.15%);">
     <div id="profile">
-      <div id="header">
-        <div class="container">
-          <nav id="pofile-background">
-            <p class="logo-text anim"><span>k</span>raftLondon.</p>
-            <ul id="sidemenu" class="anim">
-              <li style="font-weight: bold">
-                <a href="whoweare.html">Who we are</a>
+    <div id="header">
+      <div class="container"> 
+        <nav id="pofile-background">
+          <p class="logo-text anim"><span>k</span>raftLondon.</p>
+          <ul id="sidemenu" class="anim">
+            <li style="font-weight: bold">
+              <a href="whoweare.html">Who we are</a>
+            </li>
+            <li style="font-weight: bold"><a href="blog.html">Blogs</a></li>
+            <li style="font-weight: bold">
+              <a href="whatweoffer.html">What We Offer</a>
+            </li>
+            <li style="font-weight: bold"><i class="fa-sharp fa-solid fa-user" style="color: black;"></i><a href="user.html" id="user-email"></a></li>
+            <li>
+              <a href="Onboarding.html" class="reach-out anim" id="reachoutBtn">Join a Team</a>
+            </li>
+            <li>
+                <button href="" onclick="logout()" style=" font-size: 16px; background: transparent; border: none; cursor: pointer; font-weight: 600;">Log-Out</button>
               </li>
-              <li style="font-weight: bold"><a href="blog.html">Blogs</a></li>
-              <li style="font-weight: bold">
-                <a href="whatweoffer.html">What We Offer</a>
-              </li>
-              <li style="font-weight: bold">
-                <a href="edit.html" id="user-email"></a>
-                <i class="" id="profile-picture" style="color: black;"></i>
-                <img id="profile-picture" src="" alt="Profile Picture" style="width: 250px; height: 50px; border-radius: 50%; "/>
-              </li>
-              <li>
-                <a href="Onboarding.html" class="reach-out anim" id="reachoutBtn">Build Your Team</a>
-              </li>
-              <li>
-                <button href="" onclick="logout()" style="font-size: 16px; background: transparent; border: none; cursor: pointer; font-weight: 600;">Log-Out</button>
-              </li>
-              <img
-                src="image/close (2).png"
-                class="clone-icon anim"
-                id="close-times"
-                onclick="closemenu()"
-              />
-            </ul>
             <img
-              src="image/menu.png"
+              src="image/close (2).png"
               class="clone-icon anim"
-              id="open-times"
-              onclick="openmenu()"
+              id="close-times"
+              onclick="closemenu()"
             />
-          </nav>
-        </div>
+          </ul>
+          <img
+            src="image/menu.png"
+            class="clone-icon anim"
+            id="open-times"
+            onclick="openmenu()"
+          />
+        </nav>
       </div>
     </div>
+  </div>
 
     <!-- Header -->
     <div id="header-content" style=" background-image: url(image/team7.png);">
       <div class="header-text">
         <h1 class="top" id="hover-effect2">
           <a href="" style="color: rgb(223, 210, 184)"
-            ><span class="dev" id="top" style="color: black">There</span
-            ><span style="color: rgb(223, 210, 184)" class="devs">Are</span></a
-          ><br />Greater<a href="" style="color: rgb(8, 52, 8)"
+            ><span class="dev" id="top" style="color: black">Create</span
+            ><span style="color: rgb(223, 210, 184)" class="devs">Human</span></a
+          ><br />Centric<a href="" style="color: rgb(8, 52, 8)"
             ><span class="dev" id="hover-effect"
-              >Chances<br />With</span
+              >Products<br />With</span
             ></a
           ><span style="color: black" class="devs">Teams</span>
         </h1>
@@ -275,29 +271,6 @@
         document.getElementById('user-email').textContent = firstLetter + secondLetter;
       </script>
     <script type="text/javascript" src="logout.js"></script>
-     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-  // Retrieve user profile from localStorage
-  const storedUserProfile = JSON.parse(localStorage.getItem('userProfile'));
-
-  // Check if user profile exists
-  if (storedUserProfile) {
-    // Populate user information on the profile page
-    document.getElementById('user-email').textContent = firstLetter + secondLetter;
-
-    // Populate the profile picture
-    if (storedUserProfile.profilePicture) {
-      document.getElementById('profile-picture').src = storedUserProfile.profilePicture;
-    } else {
-      // Set a FontAwesome icon as the default profile picture
-      document.getElementById('profile-picture').classList.add('fa-sharp', 'fa-user', 'fa-solid');
-    }
-  }
-});
-
-
-
-     </script>
 
 
     <!-- javascript -->

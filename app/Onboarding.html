@@ -21,6 +21,7 @@
 
 <body
     style="background-image: url(image/); background-repeat: no-repeat; background-position-x: 15%; background-position-y:30% ; background: linear-gradient(93.08deg, #FFFFFF 5.3%, floralwhite 36.63%, floralwhite 72.36%, rgba(225, 235, 242, 0) 98.15%); ">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
         integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -28,11 +29,11 @@
         <div class='onboard'>
             <div class='onboard-content'>
                 <div class='onboard-logo'>
-                    <p class="logo-text anim"><span>k</span>raftLondon.</p>
+                    <p class="logo-text anim"><span></span></p>
                 </div>
                 <div class='header-content'>
                     <h1>Help us give you a customized experience 🥳</h1>
-                    <p>What brings you to KraftLondon?</p>
+                    <p>How would you like to connect?</p>
                 </div>
                 <div class='card-container'>
                     <div class='card-group'>
@@ -54,7 +55,7 @@
                           </div>
                           <div class='card-details'>
                             <h1>Join a Team</h1>
-                            <p>Our system lets you focus on strategic HR by letting you automate much of your employee life-cycle processes - from hire through to exit.</p>
+                            <p>Our system lets you focus on finding the right team that suits your skill sets and expertise all you have to do is search.</p>
                           </div>
                         </div>
                       </div>
@@ -65,17 +66,13 @@
                           </div>
                           <div class='card-details'>
                             <h1>Be a Guest</h1>
-                            <p>Prepare payroll automatically and never lose an employee over delays or payroll mistakes.</p>
+                            <p>Dive into the world of knowledge and know how things work. with our help you can learn how certain technologies work</p>
                           </div>
                         </div>
                       </div>
                     </div>
                     <button id="goToSelectedPageBtn" onclick="redirectToSelectedPage()">Go to selected page</button>
-                  
                   </div>
-                
-                
-
             </div>
         </div>
     </div>
@@ -130,7 +127,6 @@
                 <p>Mondays-Fridays</p>
             </div>
             <p>8am - 5pm</p>
-
         </div>
     </footer>
 
@@ -139,7 +135,6 @@
 
 
     <script type="text/javascript" src="login.js">
-
     </script>
 
     <!-- javascript -->
@@ -166,10 +161,10 @@
     
             switch (cardNumber) {
               case 0:
-                window.location.href = 'HR.html';
+                window.location.href = 'signBuild.html';
                 break;
               case 1:
-                window.location.href = 'EMPOLY.html';
+                window.location.href = 'signTeam.html';
                 break;
               case 2:
                 window.location.href = 'Both.html';

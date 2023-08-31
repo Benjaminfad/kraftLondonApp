@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="port.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>kraftLondon.</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>portfolio</title>
+
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+        <div id="content">
+          <div class="container">
+            <h1>Profile</h1>
+            <form id="profile-form">
+              <label for="profile-picture">Profile Picture:</label>
+              <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+              <label for="full-name">Full Name:</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Enter full name">
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter email" disabled>
+      
+              <label for="description">Description:</label>
+              <textarea id="description" name="description" placeholder="Enter description"></textarea>
+      
+              <button type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </body>
+      
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  // Retrieve user profile from localStorage
+  const storedUserProfile = JSON.parse(localStorage.getItem('userProfile'));
+
+  // Check if user profile exists
+  if (storedUserProfile) {
+    // Populate the profile form with the user's information
+    document.getElementById('email').value = storedUserProfile.email;
+    document.getElementById('full-name').value = storedUserProfile.fullName;
+    // Add other profile fields as needed
+
+    // Get the profile form element
+    const profileForm = document.getElementById('profile-form');
+
+    // Add event listener to the profile form
+    profileForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // prevent the default form submission
+
+      // Get the updated profile information
+      const updatedProfile = {
+        email: storedUserProfile.email,
+        fullName: document.getElementById('full-name').value,
+        // Get other profile fields and update them
+      };
+
+      // Update the user profile in localStorage
+      localStorage.setItem('userProfile', JSON.stringify(updatedProfile));
+
+      // Show a success message to the user
+      swal({
+        title: "Profile Updated",
+        text: "Your profile information has been updated.",
+        icon: "success",
+        button: "OK",
+        customClass: {
+          container: "my-swal-container",
+          title: "my-swal-title",
+          content: "my-swal-content",
+          confirmButton: "my-swal-button",
+        },
+      }).then(() => {
+        // Redirect the user to the profile page
+        window.location.href = "profile.html";
+      });
+    });
+
+    // Handle image upload
+    const profilePictureInput = document.getElementById('profile-picture');
+    profilePictureInput.addEventListener('change', function() {
+      const file = profilePictureInput.files[0];
+      const reader = new FileReader();
+
+      reader.onloadend = function() {
+        // Update the profile picture in the user profile
+        updatedProfile.profilePicture = reader.result;
+        localStorage.setItem('userProfile', JSON.stringify(updatedProfile));
+      };
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    });
+  }
+});
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+     </script>
+
+
+
+</html>

@@ -69,8 +69,14 @@ nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 17.5px;
+    font-weight: bold;
    
    
+}
+nav ul li a.active{
+	color: #238680;
+	cursor: pointer;
+	font-weight: 500;
 }
 
 nav ul li a:hover{
@@ -154,12 +160,10 @@ nav ul li a:hover{
 
 }
 #hover-effect:hover{
-    transform: translateY(-30px);
     background-color: blue;
     color: #fff;
 }
 #hover-effect2:hover{
-    transform: translateY(-30px);
     transition: 0.5s;
     cursor: pointer;
 }
@@ -992,13 +996,6 @@ background-image:url("image/group.png");
     color: #ffffff;
     font-weight: bold;
   }
-  
-
-
-
-
-
-
 
 /*contact staff ends here*/
 
@@ -1108,7 +1105,7 @@ nav .clone-icon{
     display: none;
 }
 
-/*----footer----*/
+/*----footer ends here ----*/
 
 social-icons img{
     width: 30px;
@@ -1198,7 +1195,10 @@ form .btn2{
         transform: translateY(0);
     }
 }
+/*----- AUTHENTICATION-----------*/
+
 .login-container{
+    background: linear-gradient(93.08deg, #ffffff 5.3%, rgb(255, 255, 255) 32.63%, rgb(251, 247, 247) 22.36%, rgba(0, 0, 0, 0.004) 98.15%);
     width: 100%;
     height: 100%;
     color: #000;
@@ -1246,15 +1246,17 @@ form .btn2{
     border-radius: 5.67px;
     border: none;
     background-color: black;
+    box-shadow: 5px 7px 2px 0 rgb(187, 185, 185); 
     transition: 0.5s;
     animation-delay: 0.8s;
     cursor: pointer;
 }
 #signup-form button:hover{
     background-color: rgb(8, 52, 8) ;
+    box-shadow:none;
 }
 #signup-form h1{
-    font-size: 20px;
+    font-size: 30px;
 }
 #signup-form label{
     font-size: 15px;
@@ -1291,16 +1293,22 @@ form .btn2{
     font-size: 16px;
     border-radius: 5.67px;
     border: none;
+    box-shadow: 5px 7px 2px 0 rgb(187, 185, 185); 
     background-color: black;
     transition: 0.5s;
     animation-delay: 0.8s;
     cursor: pointer;
 }
 #login-form button:hover{
-    background-color: rgb(8, 52, 8) ;;
+    background-color: rgb(8, 52, 8) ;
+    box-shadow: none;
+}
+#login-form span a{
+    text-decoration: underline #0e5550;
+    color: #0e5550;
 }
 #login-form h1{
-    font-size: 20px;
+    font-size: 30px;
 }
 #login-form label{
     font-size: 15px;
@@ -1310,9 +1318,10 @@ form .btn2{
     position: relative;
     top: 15px;
 }
+/* AUTHETICATION ENDS HERE */
+
+
 /* DETAILS PAGE */
-
-
 #details1{
     background-image: url('image/codepic2.avif');
 	width: 100%;
@@ -1415,11 +1424,14 @@ form .btn2{
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 1px 2px 1px rgb(255, 255, 255);
+    
   }
 
   .selected {
-    background-color: #e0e0e0;
+    background-color: #ffffffe2;
     cursor: pointer;
+    font-weight: 600;
+    box-shadow: 15px 17px 12px 0 rgb(187, 185, 185); 
   }
   
   .card-content {
@@ -1575,6 +1587,13 @@ form .btn2{
     top: 25px;
     left: 25px;
     cursor: pointer;
+   }
+  #close-times{
+    width: 32px;
+    height: 2
+
+
+
    }
 
    .about-col-1, .about-col-2{
@@ -1754,7 +1773,7 @@ footer{
     left: 10rem;
 }
 .section-p1{
-	padding: 40px 80px;
+	padding: 40px 20px;
 	
 }
 
@@ -1965,6 +1984,254 @@ footer a:hover{
 }
 
 /*--- blog --- */
+/*-----onboarding screen ----*/
+.onboard-container {
+    background: linear-gradient(93.08deg, #FFFFFF 5.3%, #fcefea 36.63%, #fdf7f7 72.36%, rgba(225, 235, 242, 0) 98.15%);
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 4rem;
+  }
+  .onboard-logo .logo-text{
+      width: 40px;
+      height: 250px;
+      font-size: 30px;
+      position: relative;
+      left: 95px;
+      top: 6rem;
+      font-family: 'Bauhaus 93';
+      color: black;
+     
+  }
+  .header-content h1 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .header-content p {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .onboard-content .header-content {
+    color: black;
+    position: relative;
+    bottom: 4rem;
+    line-height: 50px;
+  }
+  .onboard-content .card-container {
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    margin-left: 11%;
+    bottom: 0rem;
+  }
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: rgb(255, 255, 255);
+    width: 78%;
+    height: 38vh;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px rgb(255, 255, 255);
+  }
+  .card-content {
+    padding: 30px;
+    line-height: 37px;
+  }
+  .card-content h1 {
+    font-size: 23px;
+  }
+  .card-content p {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .card-image img {
+    width: 40px;
+    height: 40px;
+  }
+  .selected {
+      background-color: rgb(219, 219, 219);
+      cursor: pointer;
+      box-shadow: 5px 7px 2px 0 rgb(187, 185, 185); 
+      width: 78%;
+      height: 38vh;
+    }
+    
+  .card-container button {
+    background: rgb(8, 52, 8) ;
+    padding: 18px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    top: 2rem;
+    right: 10%;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+/*----onboardingscreen---*/
+#offer-content{
+    display: block;
+    background-image: url(image/);
+    animation-delay: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -50rem ;
+    padding: 2rem;
+    margin-left: 1rem;
+    gap:5px; 
+    animation:rotate 6s infinite alternate linear; 
+}
+.offer-text{
+   width: 100%;
+    color: #000;
+    padding-top: 10px;
+}
+.offer-text h1 {
+   font-size: 36px;
+   
+   position: relative;
+   bottom: 5px;
+  animation-delay: 0.5s;
+}
+.offer-text h1 span {
+    color: #238680;
+}
+.sub-text{
+  width: 50%;
+  color: #000; 
+}
+.sub-text h1 {
+  font-size: 20px;
+  font-weight:lighter;
+  color: #238680;
+  position: relative;
+  top: 13rem;
+  left: 5rem;
+  line-height: 30px;
+  animation-delay: 0.5s;
+}
+.sub-text a{ 
+  position: relative;
+  top: 14rem;
+  left: 5rem;
+  animation-delay: 0.5s;
+  font-size: 25px;
+  font-weight:lighter;
+  text-decoration-color: 2px solid #0e5550;
+  color: black;
+}
+
+/* -----------image------------  */
+#image{
+  background-image: url(image/group.jpg);
+  background-position-x: -36rem ;
+  background-size: cover;
+  height: 50vh;
+}
+/* -----------image------------  */
+
+/*contents*/
+.contents{
+ height: 120vh;
+ padding: 5rem;
+ padding-left:27rem ;
+ color: #238680;   
+}
+.contents p{
+  font-size: 21px;
+  line-height:2rem;
+}
+.contents h6{
+  font-size: 21px;
+  line-height:2rem; 
+  font-weight: lighter;
+  margin-top: 50px;
+}
+.contents h5{
+  font-size: 21px;
+  font-weight: lighter;
+  margin-top: 45px;  
+}
+.contents h3{
+  font-size: 30px;
+  margin-top: 45px;
+}
+.contents h3::after{
+  content: "";
+  background-color: red;
+  width: 100px;
+  height: 80vh;
+}
+.contents h1{
+  font-size: 21px;
+  font-weight: lighter;
+  margin-top: 36px;
+  line-height: 2rem;  
+}
+.contents h2{
+  font-size: 21px;
+  font-weight: lighter;
+  margin-top: 36px;
+  line-height: 2rem;  
+}
+.contents h4{
+  font-size: 21px;
+  font-weight: lighter;
+  margin-top: 36px;
+  line-height: 2rem;  
+}
+.contents span{
+  font-size: 21px;
+  font-weight: lighter;
+  top: 20px;
+  line-height: 2rem;  
+}
+
+.contents-2{
+ 
+  height: 80vh;
+  padding: 5rem;
+  padding-left:27rem ;
+  color: #238680;  
+}
+
+.contents-2 h3{
+   font-size: 30px;
+   margin-top: 45px;
+}
+.contents-2 h3::after{
+   content: "";
+   background-color: red;
+   width: 100px;
+   height: 80vh;
+}
+.contents-2 h1{
+   font-size: 21px;
+   font-weight: lighter;
+   margin-top: 36px;
+   line-height: 2rem;  
+}
+.contents-2 h2{
+   font-size: 21px;
+   font-weight: lighter;
+   margin-top: 36px;
+   line-height: 2rem;  
+}
+.contents-2 h4{
+   font-size: 21px;
+   font-weight: lighter;
+   margin-top: 36px;
+   line-height: 2rem;  
+}
+
+
+/*contents ends here*/
 
 
 }
@@ -1972,75 +2239,6 @@ footer a:hover{
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     
   }
-  @media (max-width: 800px) {
-    .onboard-container {
-      background: linear-gradient(93.08deg, #FFFFFF 5.3%, #fcefea 36.63%, #fdf7f7 72.36%, rgba(225, 235, 242, 0) 98.15%);
-      color: black;
-      text-align: center;
-      width: 100%;
-      position: relative;
-      bottom: 4rem;
-    }
-    .header-content h1 {
-      font-size: 23px;
-      font-weight: 700;
-    }
-    .header-content p {
-      font-size: 17px;
-      font-weight: 400;
-    }
-    .onboard-content .header-content {
-      color: black;
-      position: relative;
-      bottom: 4rem;
-      line-height: 40px;
-    }
-    .onboard-content .card-container {
-      width: 100%;
-      position: relative;
-      padding: 0px;
-      margin-left: 19%;
-      bottom: 0rem;
-    }
-    .card-group {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .card {
-      background-color: rgb(255, 255, 255);
-      width: 60%;
-      height: 40vh;
-      border-radius: 10px;
-      box-shadow: 1px 2px 1px rgb(255, 255, 255);
-    }
-    .card-content {
-      padding: 30px;
-      line-height: 32px;
-    }
-    .card-content h1 {
-      font-size: 21px;
-    }
-    .card-content p {
-      line-height: 18px;
-      font-weight: 600;
-    }
-    .card-image img {
-      width: 40px;
-      height: 40px;
-    }
-    .card-container button {
-      background: rgb(243, 114, 63);
-      padding: 18px;
-      border: none;
-      position: relative;
-      cursor: pointer;
-      top: 4rem;
-      right: 19%;
-      border-radius: 15px;
-      color: #fff;
-      font-size: 18px;
-    }
-    /* styles go here */
 
 
 /*---services---*/

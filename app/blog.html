@@ -17,7 +17,7 @@
           <P class="logo-text anim"><span>k</span>raftLondon.</P>
           <ul id="sidemenu" class="anim">
             <li><a href="whoweare.html">Who we are</a></li>
-            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="blog.html" class="active">Blogs</a></li>
             <li><a href="#services">What We Offer</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact" class="reach-out">Reach Out To Us</a></li>
@@ -35,61 +35,11 @@
 	</section>
 
    <section id="blog" class="anim">
-    <div class="blog-box">
-     <div class="blog-img">
-     <img src="image/team.avif">
-     </div>
-     <div class="blog-details">
-      <h4>Tech startups now making an inpact</h4>
-      <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard</p>
-      <a href="#">CONTINUE READING</a>
+    <div  id="blog-container">
+    
     </div>
-    <h1>13/01</h1>
-    </div>
-    <div class="blog-box">
-        <div class="blog-img">
-        <img src="image/manworking.avif">
-        </div>
-        <div class="blog-details">
-         <h4>Twitter development team makes big annoucment</h4>
-         <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard</p>
-         <a href="#">CONTINUE READING</a>
-       </div>
-    <h1>20/01</h1>
-    </div>
-    <div class="blog-box">
-        <div class="blog-img">
-        <img src="image/happy7.jpg">
-        </div>
-        <div class="blog-details">
-         <h4>The Cotton-Jersey Zip-Up Hoodies</h4>
-         <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard</p>
-         <a href="#">CONTINUE READING</a>
-       </div>
-       <h1>01/02</h1>
-       </div>
-       <div class="blog-box">
-        <div class="blog-img">
-        <img src="image/model4.jpg">
-        </div>
-        <div class="blog-details">
-         <h4>The Cotton-Jersey Zip-Up Hoodies</h4>
-         <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard</p>
-         <a href="#">CONTINUE READING</a>
-       </div>
-       <h1>10/02</h1>
-       </div>
-       <div class="blog-box">
-        <div class="blog-img">
-        <img src="image/model5.jpg">
-        </div>
-        <div class="blog-details">
-         <h4>The Cotton-Jersey Zip-Up Hoodies</h4>
-         <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard</p>
-         <a href="#">CONTINUE READING</a>
-       </div>
-       <h1>20/02</h1>
-       </div> 
+   
+   
    </section> 
 
   <section id="pagination" class="section-p1">
@@ -111,7 +61,7 @@
       <a href="#">About Us</a>
       <a href="#">Delivery Information</a>
       <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
+      <a href="login.html">Login</a>
       <a href="#">Contact Us</a>
     </div>
     <div class="col">
@@ -120,7 +70,7 @@
       <a href="#">What we have to offer</a>
       <a href="#">Blogs</a>
       <a href="#">Terms & Conditions</a>
-      <a href="#">Contact Us</a>
+      <a href="#">Join Us</a>
       <div class="folow">
         <h4>follow us</h4>
         <div class="icon">
@@ -132,26 +82,25 @@
     <div class="col">
       <h4>About</h4>
       <div class="col-con">
-      <img src="">
+      <i class="fa-solid fa-location-dot fa-beat-fade" id="img"></i>
       <p>Lagos,Nigeria</p>
      </div>
      <div class="col-con">
-      <img src="">
+      <i class="fa-solid fa-phone-volume fa-bounce" id="img"></i>
       <p>0706706624</p>
      </div>
      <div class="col-con">
-      <img src="image/email.png">
+      <i class="fa-solid fa-at" id="img"></i>
       <p>kraftLondonhello@gmail.com</p>
      </div>
      <div class="col-con">
-      <img src="">
+      <i class="fa-regular fa-alarm-clock fa-shake" id="img"></i>
       <p>Mondays-Fridays</p>
      </div>
      <p>8am - 5pm</p>
      
     </div>
   </footer>
-
   
    <script>
     // @ts-nocheck
@@ -181,7 +130,51 @@
       sidemenu.style.left = "-800px";
     }
   </script>
+
+<script>
+  const blogData = [
+    {
+      imageSrc: 'image/team.avif',
+      title: 'Tech startups now making an impact',
+      content: 'Kickstarter man braid godard coloring book...',
+      link: '#',
+      date: '13/01'
+    },
+    {
+      imageSrc: 'image/appl.webp',
+      title: 'How to Install iOS 17 Public Beta on iPhone',
+      content: 'Adventurous iPhone users may be interested in joining the iOS 17 public beta to get an early look and feel of what the upcoming iOS 17 system software version is like on their own iPhone.',
+      link: '#',
+      date: '13/01'
+    },
+    
+    // Add more objects with similar structure for other blog posts
+  ];
+
+  const blogContainer = document.getElementById('blog-container');
+
+  // Iterate through the blog data and create blog boxes
+  blogData.forEach(blog => {
+    const blogBox = document.createElement('div');
+    blogBox.className = 'blog-box';
+
+    blogBox.innerHTML = `
+      <div class="blog-img">
+        <img src="${blog.imageSrc}" alt="Blog Image">
+      </div>
+      <div class="blog-details">
+        <h4>${blog.title}</h4>
+        <p>${blog.content}</p>
+        <a href="${blog.link}">CONTINUE READING</a>
+      </div>
+      <h1>${blog.date}</h1>
+    `;
+
+    blogContainer.appendChild(blogBox);
+  });
+</script>
  
+  
 	<script src="script.js"></script>
 
 </body>

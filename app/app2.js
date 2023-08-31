@@ -35,10 +35,9 @@ signupForm.addEventListener('submit', function(event) {
     },
   }).then(() => {
     // redirect the user to the login page
-    window.location.href = 'login.html';
+    window.location.href = 'login2.html';
   });
 });
-
 
 
 
