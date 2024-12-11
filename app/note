@@ -1,1 +1,36 @@
-In this blog post, we delve deep into the profound impact that innovative tech startups are making across a diverse range of industries, ushering in a wave of transformative change. As the technological landscape evolves at an unprecedented pace, these pioneering startups emerge as the catalysts of disruption and innovation, leaving their mark on sectors spanning healthcare, finance, education, and beyond.Through the utilization of cutting-edge technologies like artificial intelligence, blockchain, and augmented reality, these startups are not merely addressing existing challenges, but also uncovering uncharted opportunities that were once beyond imagination. Their ability to swiftly adapt and embrace agility reshapes the dynamics of the market, fostering healthy competition and prompting industry titans to reimagine their strategies.Fuelled by a collaborative spirit, often seen through partnerships with established corporations and academia, these startups cultivate a culture of knowledge sharing and cross-pollination, intensifying the tempo of innovation. As these startups thrive and attract investments, they wield their transformative power to not only reshape industries but also contribute to job creation, economic growth, and the flourishing of innovation ecosystems.Guided by unique problem-solving approaches and a commitment to user-centric design, these startups engineer breakthrough products and services that redefine human interaction with technology. From personalized healthcare solutions to sustainable energy breakthroughs, tech startups champion causes that align with evolving societal needs, placing purpose at the core of their ventures.In a world of perpetual change, tech startups stand at the forefront of progress, steering the Fourth Industrial Revolution, and forging pathways to solutions that hold the potential to reshape our future in ways beyond imagination.
+const blogData = [
+    {
+      imageSrc: 'image/team.avif',
+      title: 'Tech startups now making an impact',
+      content: 'Kickstarter man braid godard coloring book...',
+      fullContent: 'This is the full content of the first blog post. It goes into more detail about the topic...',
+      link: 'blog1.html',
+      name: 'Toyosi Agbaje',
+      date: '13/01'
+    },
+    {
+      imageSrc: 'image/appl.webp',
+      title: 'How to Install iOS 17 Public Beta on iPhone',
+      content: 'Adventurous iPhone users may be interested in joining the iOS 17 public beta to get an early look and feel of what the upcoming iOS 17 system software version is like on their own iPhone.',
+      link: 'blog2.html',
+      date: '13/01'
+    },
+    {
+      imageSrc: 'image/team.avif',
+      title: 'Tech startups now making an impact',
+      content: 'Kickstarter man braid godard coloring book...',
+      fullContent: 'This is the full content of the first blog post. It goes into more detail about the topic...',
+      link: 'blog1.html',
+      name: 'Toyosi Agbaje',
+      date: '13/01'
+    },
+     {
+      imageSrc: 'image/apple.webp',
+      title: 'Say hello to Magic Port.',
+      content: 'USB-C support is coming to iPhone 15 and iPhone 15 Pro — in a  whole new way, enabled by Dynamic Island.',
+      link: 'blog2.html',
+      date: '13/01'
+    },
+    
+    // Add more objects with similar structure for other blog posts
+  ];

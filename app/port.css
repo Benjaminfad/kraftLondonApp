@@ -523,7 +523,7 @@ nav ul li a:hover{
 /*-- blog page --*/
 
 #page-header{
-    background-image: url('image/');
+
 	width: 100%;
 	height: 40vh;
 	background-size: cover;
@@ -548,6 +548,7 @@ nav ul li a:hover{
 }
 #blog .blog-box{
 	display: flex;
+    cursor: pointer ;
 	align-items: center;
 	width: 100%;
     position: relative;
@@ -582,6 +583,14 @@ nav ul li a:hover{
 	font-size: 25px;
     color: #000;
 }
+.blog-details h5{
+    color: black;
+    margin-left: 7rem;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    position:relative;
+    bottom: 5px;
+}
 .blog-details p{
 	margin-top: 10px;
     color: #171713f0;
@@ -605,13 +614,39 @@ nav ul li a:hover{
 	
 }
 #blog .blog-box h1{
-	top: -55px;
+	top: 15px;
 	left: 0;
-	font-size: 30px;
-	font-weight: 700;
+	font-size: 16px;
+	font-weight: 800;
+    position: relative;
 	color: #171713f0;
 	z-index: -9;
 }
+.highlighted {
+    background-color: ;
+    box-shadow: 0px 0px 0px black;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   
+  }
+  #pagination{
+    background-color:#42c754a7;
+  }
+  #pagination .pagination-container{
+  display: flex;
+ gap: 30px;
+  padding-left: 50%;
+  }
+  #pagination  .pagination-container a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+  #full-content{
+    font-size: 19px;
+    font-weight:400;
+    line-height: 40px;
+  }
 /*--- blog --- */
 
 
@@ -919,7 +954,7 @@ background-image:url("image/group.png");
 
 /*contact staff*/
 #staff{
-    background-color: #0f2523;
+    background-color: rgb(8, 52, 8) ;;
     
 }
 .contact-staff{
@@ -1897,11 +1932,11 @@ footer a:hover{
 
 }
 #blog img{
-	width:300%;
+	width:380%;
 	height: 20vh;
     position: relative;
-    right: 60px;
-	object-fit: none
+    right: 90px;
+	object-fit: cover
    
     
 }
@@ -1928,6 +1963,13 @@ footer a:hover{
     font-family: 'Courier New', Courier, monospace;
     color: #000;
 }
+.blog-details h5{
+    margin-left: 0rem;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    position:relative;
+    bottom: 5px;
+}
 .blog-details p{
 	margin-top: 10px;
     line-height: 30px;
@@ -1953,14 +1995,14 @@ footer a:hover{
 }
 #blog .blog-box h1{
 	top: 9.8px;
-	left:7rem;
+	left:0rem;
     position: relative;
-
 	font-size: 15px;
 	font-weight: 700;
 	color: #171713f0;
 	z-index: -9;
 }
+#
 #page-header{
     background-image: url('image/');
 	width: 100%;
@@ -1981,7 +2023,26 @@ footer a:hover{
 }
 .blog-header img{
     width: 30px;
+    
 }
+.blog-content #blog-image{
+   position: relative;
+   object-fit: contain;
+   right: 8rem;
+}
+#full-content{
+    font-size: 16px;
+   position: relative;
+   text-align: left;
+   right: 130px;
+   line-height: 36px;
+    width: 330px;
+}
+#pagination .pagination-container{
+    display: flex;
+   gap: 30px;
+    padding-left: 23%;
+    }
 
 /*--- blog --- */
 /*-----onboarding screen ----*/
@@ -2229,6 +2290,7 @@ footer a:hover{
    margin-top: 36px;
    line-height: 2rem;  
 }
+
 
 
 /*contents ends here*/
